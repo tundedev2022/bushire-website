@@ -586,13 +586,10 @@ a{
   /* about page */
   #s-header.about-header{
     background-image: url(/img/bg.jpg);
-    height: 70vh;
+    /* height: 60vh; */
   }
   #about{
     padding: 10px;
-    background-position: top 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
 
   }
   .about-container{
@@ -641,10 +638,10 @@ a{
   .service-hero-container h2 {
     display: grid;
     margin: 50px 0;
-    font-size: 30px;
+    font-size: 25px;
     font-family: monospace;
     text-align: center;
-    font-weight: 900;
+    font-weight: 600;
     color: gray;
   }
   .service-list{
@@ -711,11 +708,12 @@ a{
    position: fixed;
    top: 0;
    right: -900px;
-   height: 70vh;
+   height: 75vh;
    width: 800px;
    background-color: rgb(10, 3, 10);
    padding: 60px 0 0 10px;
-   transition: .3s;
+   transition:ease-in-out .5s;
+
  
  }
  
@@ -857,12 +855,8 @@ a{
   flex-wrap: wrap;
   justify-content: center;
   margin: 40px;
-  /* padding: 50px 10px; */
 }
-/* .icon-box  i {
-    font-size: 40px;
-    color: black;
-} */
+
 
 .chose-con p{
     text-align: center;
@@ -940,10 +934,14 @@ a{
   transform: scale(0.9);
 }
 /* service page */
+.hero-service {
+  padding: 20px 0 10px 30px;
+  overflow-x: hidden;
+}
 .service-hero-container h2 {
   display: flex;
   font-size: 24px;
-  text-align: center;
+  /* text-align: center; */
   font-weight: 700;
   color: rgb(45, 48, 47);
   min-width: 900px;
@@ -977,53 +975,63 @@ li, a {
  }
 
    /* android devices */
-   @media (max-width: 480px) {
+   @media (max-width: 477px) {
     .header{
       display:flex;
-      padding: 0 3px;
+      align-items: center;
+      padding: 0 20px;
     }
     .navbar {
+      display: flex;
+      flex-direction: column;
       align-items: center;
-      height: 80vh;
-      line-height: 10px;
+      position: fixed;
+      top: 0;
+      right: -900px;
+      height: 75vh;
   }
+  .navbar li {
+    margin: 30px 0 15px 380px;
+}
    li{
     list-style: none;
     padding: 0 15px;
     font-size: 24px;
     font-weight: 900;
+    gap: 100px;
 }
     .logo {
       color: #fff;
-      font-size: 16px;
+      font-size: 10px;
       padding: 0 2px;
       margin-top: 20px;
-      /* display: none; */
   }
   .logo span{
-    font-size: 19px;
+    font-size: 15px;
+    font-weight: 900;
   }
   .book-btn button  {
     margin-top: 10px;
     margin-right: 30px;
-    padding: 5px 30px;
+    padding: 5px 20px;
     font-size: 19px;
     font-weight: 200;
-    width: 130%;
+    width: 120%;
+    border: 2px solid white;
 }
 .book-btn button a{
-  font-size: 11px;
+  font-size: 13px;
 }
 #mobile i {
-  font-size: 40px;
+  font-size: 30px;
   margin-right:  3px;
 }
 
 .close {
   position: absolute;
   top: 3%;
-  right: -40%;
-  color: red;
+  right: 9%;
+  color: white;
 }
 .hero {
   display: flex;
@@ -1124,11 +1132,25 @@ li, a {
   margin-left: 70px;
   padding: 10px 50px;
 }
+.hire-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: column; */
+}
 .hire-container p {
-  font-size: 20px;
+  font-size: 19px;
   text-align: center;
+  line-height: 30px;
+  /* color: white; */
+  padding:0 20px ;
+}
+.phone   {
   color: white;
-  padding:10px 20px ;
+} span
+h3{
+  font-size: 20px;
 }
 
 
@@ -1163,6 +1185,9 @@ li, a {
       line-height: 20px;
       text-align: justify; 
   }
+  .a-section {
+    font-size: 23px;
+}
     /* feedback */
   .section-feedback {
     height: 100vh;
@@ -1196,15 +1221,21 @@ li, a {
       font-size: 16px;
       padding-left: 20px;
   }
+  .about-header span {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    line-height: 20px;
+}
      
-    .about-text p {
-      padding: 50px 25px 160px 25px;
-      width: 100%;
-      height: 150%;
-      height: 30px;
-      font-size: 15px;
-      line-height: 20px;
-  }
+  .about-text p {
+    padding: 50px 25px 160px 25px;
+    width: 100%;
+    height: 150%;
+    height: 30px;
+    font-size: 15px;
+    line-height: 20px;
+}
   .about-gallery  {
     padding: 0 10px;
 }
@@ -1213,19 +1244,27 @@ li, a {
 }
 
     /* service-page */
+    .hero-service {
+      padding: 60px 50px;
+  }
+  .service-gallery img {
+    width: 120%;
+}
     .service-hero-container  {
       display: flex;
       flex-direction: column;
-      /* padding-right: 90px; */
+      align-items: center;
+      justify-content: center;
   }
-  .service-hero-container h2{
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
-    min-width: 600px;
-    line-height: 25px;
-    margin-left: -30px;
-  }
+  .service-hero-container h2 {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 10px 280px;
+    color:black;
+    margin-top: -30px;
+    margin-bottom: 20px;
+}
+  
   .service-list {
     padding: 30px 0 60px 30px;
     font-size: 30px;
@@ -1233,14 +1272,13 @@ li, a {
     font-family: sans-serif;
 }
   li {
-    list-style: none;
     padding: 0 15px;
     color: rgb(0, 139, 109);
     font-size: 14px;
     font-weight: 400;
 }
 .service-list li {
-  list-style-type: square;
+  list-style:square;
   font-weight: 900;
 }
 .service-list li::marker {
@@ -1251,10 +1289,9 @@ li, a {
   margin-left: 100px;
 }
 .gallery-cta.car .service-btn {
-  margin-left: 100px;
+  margin-left: 90px;
   padding: 10px 20px;
 }
 
- 
-    
+  
   }
