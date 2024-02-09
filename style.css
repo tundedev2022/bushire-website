@@ -19,7 +19,7 @@ input {
 }
 h2{
     font-size: 50px;
-    line-height: 54px;
+    /* line-height: 54px; */
     color: #000;
     
 }
@@ -1113,24 +1113,25 @@ li, a {
 .chose-con {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .chose-text {
   font-size:16px;
   font-weight:600;
-  min-width: 360px;
-  padding: 0 10px;
+  min-width: 350px;
+  /* padding: 0 20px; */
 }
 .chose-con h4 {
-  font-size: 26px;
+  font-size: 29px;
   text-align: center;
-  min-width: 350px;
+  min-width: 390px;
 }
 .chose-con p {
-  font-size: 20px;
-  margin:0 0 0 30px ;
+  font-size: 18px;
+  /* margin:0 40px 0 30px ; */
   padding: 10px 60px;
-  width: 500px;
-  text-align: center;
+  width: 450px;
+  /* text-align: center; */
 }
 .icon-box  i {
   font-size: 40px;
@@ -1168,8 +1169,8 @@ h3{
       /* gap: 50px; */
     }
     .contact-header span {
-      font-size: 16px;
-      font-weight: 900;
+      font-size: 14px;
+      font-weight: 400;
   }
   .a-section a {
     font-size: 20px;
@@ -1257,7 +1258,7 @@ h3{
       padding: 60px 50px;
   }
   .service-gallery img {
-    width: 120%;
+    width: 100%;
 }
     .service-hero-container  {
       display: flex;
