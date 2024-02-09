@@ -888,6 +888,12 @@ a{
  
   font-size: 35px;
 }
+.contact-header span {
+  color: white;
+  font-size: 18px;
+  font-weight: 900;
+  font-family: monospace;
+}
 
 .a-section p {
   font-size: 20px;
