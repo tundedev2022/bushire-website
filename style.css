@@ -845,7 +845,7 @@ a{
   padding: 50px 20px 10px 20px;
   margin: 10px 60px;
   text-align: center;
-  /* border-bottom: 2px solid rgba(6, 188, 212, 0.712); */
+ 
 }
 .chose-con h4{
   font-size: 40px;
@@ -861,7 +861,19 @@ a{
 .chose-con p{
     text-align: center;
     font-size: 25px;
-    padding:0 20px;
+    padding:0 10px;
+}
+.icon-box{
+  border: 1px solid rgb(148, 141, 141);
+  margin: 10px;
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+.icon-img{
+  border: 1px solid rgb(148, 141, 141);
+  margin: 10px;
+  padding: 20px 30px;
+  border-radius: 10px;
 }
 .chose-text {
   font-size: 23px;
@@ -1096,46 +1108,65 @@ li, a {
   height: 95%;
   margin: 10px 90px 0 0 ;
 }
+
 .chose-section {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
-  margin: 10px 40px 20px 0;
+  padding: 10px 40px 20px 10px;
+  margin:0 20px;
   border: none;
-  /* min-width: 400px; */
  
 }
 .chose-section  h1{
-  font-size:35px;
+  margin-top: 40px;
+  font-size:25px;
   font-weight: 700;
-  text-align: center;
 }
 .chose-con {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 110%;
+  margin-left: 60px;
 }
 .chose-text {
   font-size:16px;
   font-weight:600;
-  min-width: 350px;
-  /* padding: 0 20px; */
+  min-width: 390px;
+  color: #222;
+  margin-left: 30px;
 }
 .chose-con h4 {
-  font-size: 29px;
+  font-size: 20px;
   text-align: center;
-  min-width: 390px;
+  font-weight: 900;
 }
 .chose-con p {
   font-size: 18px;
-  /* margin:0 40px 0 30px ; */
-  padding: 10px 60px;
-  width: 450px;
-  /* text-align: center; */
+  padding: 10px 0;
+  width: 100%;
+}
+.icon-box{
+  border: 1px solid rgb(9, 9, 10);
+  padding: 10px 40px;
+  margin:20px 10px;
+  border-radius: 10px;
+  width: 100%;
+}
+icon-img {
+  width: 20px;
+  height: auto;
+}
+icon-img img{
+  width: 10%;
+  height: 10%;
 }
 .icon-box  i {
   font-size: 40px;
   margin: 10px 0;
+  
 }
 .home-btn {
   margin-left: 70px;
@@ -1267,12 +1298,13 @@ h3{
       justify-content: center;
   }
   .service-hero-container h2 {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 30px;
     padding: 10px 280px;
     color:black;
     margin-top: -30px;
     margin-bottom: 20px;
+    width: 60rem;
 }
   
   .service-list {
