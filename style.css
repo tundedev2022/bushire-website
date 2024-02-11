@@ -453,7 +453,7 @@ a{
   }
   .a-span-subtitle  {
     font-size: 20px;
-    font-weight: 700px;
+    font-weight: 700;
     letter-spacing: 1px;
     margin-top: 30px;
     color: white;
@@ -1134,12 +1134,12 @@ li, a {
 .chose-text {
   font-size:16px;
   font-weight:600;
-  min-width: 390px;
+  min-width: 360px;
   color: #222;
   margin-left: 30px;
 }
 .chose-con h4 {
-  font-size: 20px;
+  font-size: 25px;
   text-align: center;
   font-weight: 900;
 }
@@ -1150,10 +1150,10 @@ li, a {
 }
 .icon-box{
   border: 1px solid rgb(9, 9, 10);
-  padding: 10px 40px;
+  padding: 10px 20px;
   margin:20px 10px;
   border-radius: 10px;
-  width: 100%;
+  width: 130%;
 }
 icon-img {
   width: 20px;
@@ -1219,14 +1219,24 @@ h3{
       padding: 20px;
     }
     .a-section p {
-      font-size: 14px;
+      font-size: 13px;
       font-weight:900;
       margin-top: 10px;
       color: whitesmoke;
-      line-height: 20px;
+    
+      line-height: 30px;
   }
   .a-section {
-    font-size: 23px;
+    font-size: 29px;
+    font-weight: 900;
+    color: #088178;
+}
+.a-span-subtitle {
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  color: #222;
 }
     /* feedback */
   .section-feedback {
@@ -1253,30 +1263,28 @@ h3{
       .about-container {
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-        padding: 0 50px;
+        align-items: center;
     }
-    .about-text h4 {
-      padding-top: 50px;
-      font-size: 16px;
-      padding-left: 20px;
-  }
+   
   .about-header span {
     color: white;
     font-size: 16px;
     text-align: center;
-    line-height: 20px;
+    line-height: 15px;
+}
+.about-text{
+  margin-left: -80px;
+  padding: 20px 10px;
+  /* background-color: red; */
 }
 .about-text p {
-  padding: 30px 40px;
-  margin: 40px 20px;
-  width: 97%;
-  font-size: 15px;
-  line-height: 19px;
-  box-shadow:  2px 3px 5px rgb(14, 10, 10) ;
+  padding: 30px 30px;
+  width: 115%;
+  font-size: 20px;
+  font-weight: bolder;
+  line-height: 30px;
+  box-shadow: 3px 2px 10px rgb(10, 8, 8);
 }
-
-
   .about-gallery  {
     padding: 0 10px;
 }
@@ -1286,7 +1294,7 @@ h3{
 
     /* service-page */
     .hero-service {
-      padding: 60px 50px;
+      padding: 60px 30px;
   }
   .service-gallery img {
     width: 100%;
@@ -1299,12 +1307,13 @@ h3{
   }
   .service-hero-container h2 {
     font-size: 17px;
-    line-height: 30px;
+    font-weight: 900;
+    line-height: 20px;
     padding: 10px 280px;
-    color:black;
+    color:#000;
     margin-top: -30px;
     margin-bottom: 20px;
-    width: 60rem;
+    max-width: 30px;
 }
   
   .service-list {
@@ -1315,8 +1324,8 @@ h3{
 }
   li {
     padding: 0 15px;
-    color: rgb(0, 139, 109);
-    font-size: 14px;
+    color:#088178;
+    font-size: 16px;
     font-weight: 400;
 }
 .service-list li {
