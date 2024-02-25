@@ -90,10 +90,11 @@ a{
     font-weight: 800;
     border: none;
     background: transparent;
-    border: 2px solid black;
+    border: 3px solid #088178;;
     border-radius: 10px;
 }
 .book-btn button a{
+    
     color: white;
 }
 
@@ -130,7 +131,6 @@ a{
 }
 
 .hero{
-    /* flex: 1 1 250px; */
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -638,7 +638,7 @@ a{
   .service-hero-container h2 {
     display: grid;
     margin: 50px 0;
-    font-size: 25px;
+    font-size: 20px;
     font-family: monospace;
     text-align: center;
     font-weight: 600;
@@ -700,10 +700,23 @@ a{
    align-items: center;
    background-color: #333;
  }
+ .hire-footer {
+  padding: 30px 20px;
+}
+.copyright {
+  padding: 20px 10px;
+  font-size: 13px;
+  letter-spacing: 5px;
+  color: #fff;
+}
+.copyright p{
+  color: #eee;
+}
+
  .navbar {
    display: flex;
    flex-direction: column;
-   align-items: flex-start;
+   align-items: center;
    justify-content: flex-start;
    position: fixed;
    top: 0;
@@ -712,21 +725,17 @@ a{
    width: 800px;
    background-color: rgb(10, 3, 10);
    padding: 60px 0 0 10px;
-   transition:ease-in-out .5s;
-
- 
+ }
+ .navbar li a{
+  color: #eee;
+  font-size: 35px;
+  line-height: 70px;
  }
  
- .navbar li  {
-   margin: 30px 0 45px 350px;
+ .navbar li   {
+   margin: 30px 0 45px 100px;
  }
- li, a {
-   list-style: none;
-   /* padding: 0 15px; */
-   color: #fff;
-   font-size: 24px;
-   font-weight: 900;
- }
+ 
  
  .navbar.active {
    right: 0;
@@ -777,7 +786,7 @@ a{
   font-weight: 800;
   border: none;
   background: transparent;
-  border: 2px solid black;
+  border: 2px solid rgb(248, 241, 241);
   border-radius: 10px;
 }
  .hero {
@@ -992,39 +1001,43 @@ li, a {
  }
 
    /* android devices */
+ 
    @media (max-width: 477px) {
+    body{
+      overflow-x: hidden;
+    }
     .header{
       display:flex;
       align-items: center;
-      padding: 0 20px;
+      padding: 0 ;
     }
     .navbar {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      position: fixed;
-      top: 0;
-      right: -900px;
+      right: -800px;
+      width: 190%;
       height: 75vh;
+      /* overflow-x: hidden; */
   }
-  .navbar li {
-    margin: 30px 0 15px 380px;
+  .navbar li    {
+    /* margin-right: -210px;
+    margin-top: 20px; */
+    margin: 40px -350px 0 0; 
+  }
+  
+  .navbar li a {
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    line-height:2px;
+ 
 }
-   li{
-    list-style: none;
-    padding: 0 15px;
-    font-size: 24px;
-    font-weight: 900;
-    gap: 100px;
-}
-    .logo {
+ .logo {
       color: #fff;
       font-size: 10px;
       padding: 0 2px;
       margin-top: 20px;
   }
   .logo span{
-    font-size: 15px;
+    font-size: 29px;
     font-weight: 900;
   }
   .book-btn button  {
@@ -1064,6 +1077,7 @@ li, a {
 .hero-head>p {
   line-height: 30px;
   color: rgba(223, 230, 236, 0.795);
+  color: rgb(6, 188, 212, 0.714);
   font-size: 16px;
   font-weight: 700;
   width: 500px;
@@ -1132,8 +1146,8 @@ li, a {
   margin-left: 60px;
 }
 .chose-text {
-  font-size:16px;
-  font-weight:600;
+  font-size:20px;
+  font-weight:400;
   min-width: 360px;
   color: #222;
   margin-left: 30px;
@@ -1183,7 +1197,7 @@ icon-img img{
   font-size: 19px;
   text-align: center;
   line-height: 30px;
-  /* color: white; */
+  color: white;
   padding:0 20px ;
 }
 .phone   {
@@ -1196,7 +1210,8 @@ h3{
 
         /* contact page */
     #contact {
-      padding: 100px 30px;
+      
+      padding: 50px 20px;
       /* gap: 50px; */
     }
     .contact-header span {
@@ -1216,20 +1231,22 @@ h3{
 }
  
     .a-form {
-      padding: 20px;
+      padding: 20px 30px;
     }
+  
+
     .a-section p {
       font-size: 13px;
       font-weight:900;
       margin-top: 10px;
       color: whitesmoke;
-    
       line-height: 30px;
   }
+ 
   .a-section {
-    font-size: 29px;
+    font-size: 24px;
     font-weight: 900;
-    color: #088178;
+    color: #12beb3;
 }
 .a-span-subtitle {
   font-size: 25px;
@@ -1273,14 +1290,14 @@ h3{
     line-height: 15px;
 }
 .about-text{
-  margin-left: -80px;
+  margin-left: -60px;
   padding: 20px 10px;
   /* background-color: red; */
 }
 .about-text p {
-  padding: 30px 30px;
-  width: 115%;
-  font-size: 20px;
+  padding: 10px 20px;
+  width: 105%;
+  font-size: 16px;
   font-weight: bolder;
   line-height: 30px;
   box-shadow: 3px 2px 10px rgb(10, 8, 8);
