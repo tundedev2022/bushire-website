@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Service page</title>
-    <link rel="stylesheet" href="/style.css">
+    <title>Booking</title>
+    <link rel="stylesheet" href="/style.css ">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="./js/header.js" defer></script>
     <script src="./js/slider.js" defer></script>
@@ -12,72 +12,61 @@
 <body>
     <header class="header">
         <div class="logo"><h3>Oasland <span>Opes</span></h3></div>
-
         <ul class="navbar">
             <button class="close"><i class="fa fa-times"></i></button>
             <li><a href="/index.html">Home</a></li>
-            <li><a  href="/contact.html">Contact</a></li>
+            <li><a href="/contact.html">Contact</a></li>
             <li><a href="/about.html">About </a></li>
-            <li><a class="active"  href="/service.html">Our Services</a></li>
+            <li><a href="/service.html">Our Services</a></li> 
         </ul>
-        <div class="book-btn"><button><a href="/booking.html">BOOK NOW</a></button></div>
-        <!-- <div class="book-btn"><button> <a href="https://wa.me/2348034114504">BOOK NOW</a></button></div> -->
+        <div class="book-btn"><button><a class="active"  href="/booking.html">BOOK NOW</a></button></div>
 
 <div id="mobile">
     <button class="open"><i class="fa fa-bars"></i></button>
-
 </div>
-
 </header>
 
-    <section id="s-header" class="service-header">
-        <h2>Our Services</h2>
-        <span>Home / Service</span>
+    <section id="s-header" class="booking-header">
+        <h2>Book Now</h2>
+        <span>Home / Book Now</span>
     </section>
 
-    <section class="hero-service">
-        <div class="service-hero-container">
-            <h2>We rendered the following services for organization and individual business trips, event and other social enagements.</h2>
-            <ul class="service-list">
-                <li>Coaster bus hired service</li>
-                <li>Toyota Hiace  bus hired service</li>
-                <li>Toyota Sienna  hired service</li>
-                <li>Toyota Corrola hired service</li>
-            </ul>
-            <div  class="service-container">
-                <div class="s-gallery">
-                    <div class="s-des">
-                        <h5>Toyota Corrola Bus</h5>
-                        <img src="/img/16_seaters-removebg-preview.png" alt="" width="100%">
-                            <a href="/booking.html">Hire Now</a>
-                    </div>
-                    <div class="s-extra">
-                        <h5>Toyota Sienna</h5>
-                        <img src="/img/sienna img.jfif" alt="" width="100%">
-                        <a href="/booking.html">Hire Now</a>
-                    </div>
-                    <div class="s-extrax">
-                        <h5>Toyota Coaster Bus</h5>
-                        <img src="/img/mini-bus-removebg-preview.png" alt="" width="100%">
-                        <a href="/booking.html">Hire Now</a>
-                    </div>
-                    <div class="s-extral">
-                        <h5>Toyota Corolla</h5>
-                        <img src="/img/corolla.pg-removebg-preview.png" alt="" width="100%">
-                        <a href="/booking.html">Hire Now</a>
-                    </div>
-                  
-                
-              
-            </div> 
-        </div>
+    <section class="booking-section">
+        <!-- <span id="about-heading">BOOK WITH US TODAY</span> -->
+        <form class="book-form" action="#">
+            <i class="fa-brands fa-x-twitter "  style="background-color: red;"></i> <input placeholder="Name*"  required ="text">
+            <br>
+            <input placeholder="Phone number*" type="number">
+            <br>
+            <input placeholder="Whatsapp number*" required type="number">
+            <br>
+            
+            <input placeholder="Pick up Address:" required type="text">
+            <!-- <textarea placeholder="Pick up Address:" ></textarea> -->
+            <br>
+            <input placeholder="Date" required type="date">
+            <span></span><input placeholder="Time" type="time">
+            <br>
 
-    </section> 
+            <input placeholder="Arrival Station:" required type="text">
+            <br>
+            <div class="check-container">
+                <div class="check-one">
+                    <span>Oneway  </span>
+                    <input  type="checkbox" required>  
+                </div>
+                <div class="check-two">
+                    <span>Round trip </span> <input  type="checkbox" required> 
+                </div>
+            </div>
+            <button type="submit" class="a-btn book">Send</button>
+        </form>
+
+    </section>
     <div class="pop-up">
         <a href="https://wa.me/2348034114504" target="_parent"><img src="/img/whatsapp img.jpg" alt="whatsapp image"></a>
     </div>
    
-
     <footer class="hire-footer">
         <div class="hire-container">
             <div class="phone"><h3 style="color: #fff; font-size: 40px;">Oasland <span style="color: #088178; font-size: 30px; font-weight: 800;">Opes</span></h3></div>
@@ -107,6 +96,7 @@
         <p> &copy; 2024, OASLANDOPES<span>WEBSITE</span> </p>
         <span>All right reserved.</span>
     </div>
+  
 
     
 </body>
