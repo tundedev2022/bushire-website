@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="OASLANDOPES is an ever growing vehicle hiring service in lagos, Nigeria">
     <title>About page</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
@@ -11,6 +12,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="./js/header.js" defer></script>
         <script src="./js/slider.js" defer></script>
+        <script src="./js/dom.js" defer></script>
 </head>
 
 <body>
@@ -21,9 +23,11 @@
             <li><a href="/index.html">Home</a></li>
             <li><a href="/contact.html">Contact</a></li>
             <li><a class="active" href="/about.html">About </a></li>
-            <li><a href="/service.html">Services</a></li>
+            <li><a href="/service.html">Hire a vehicle</a></li>
         </ul>
-        <div class="book-btn"><button><a href="/booking.html">BOOK NOW</a></button></div>
+        <div class="book-btn">
+            <button class="js-btn" onclick="myBtn()"><a href="/booking.html">BOOK NOW</a></button>
+            </button></div>
         <!-- <div class="book-btn"><button> <a href="https://wa.me/2348034114504"">BOOK NOW</a></button></div> -->
 
         <div id="mobile">
@@ -44,11 +48,11 @@
             <div class="about-text">
                 
                 <span id="about-heading">ABOUT US</span>
-               <p> Oasland Opes service is a world-class provider of transportation services with an extensive fleet of HIACE,COASTER,SIENNA and SEDAN. On coroprate and business, clients have come to associate our service level and Professionalism with true excellence that is seamless and uncomplicated as a vehicle hire service should be.
+               <p> Oasland Opes transportation service is a world-class provider of transportation services with an extensive fleet of  <strong>hiace bus, coaster bus, sienna and sedan</strong>. Our corporate and business clients have come to associate our service level and professionalism with true excellence that is seamless and uncomplicated as a vehicle hire service should be.
                 <br>
 
-                When you select Oasland 
-                Opes as your preferred transportation provider, we become part of your team, reflecting the high standards and corporate image you demand. We believe in building long term relationship and have continously evolved as the needs of our partners have changed and grown.
+               
+                When you make Oasland Opes as your preferred transportation provider, we become part of your team, reflecting the high standards and corporate image you demand. We believe in building long term relationship and have continously evolved as the needs of our partners have changed and grown.
                 </p>
 
             </div>
@@ -60,35 +64,39 @@
         </div>
 
     </section>
-   
 
     <section class="chose-section">
         <!-- <h3>Why Choose Us</h3>
-        <p class="chose-para">At Oasland Opes, we understand that transportation is not just about the vehicles we provide and the movement of passengers from one point to another , but also the experiences we create . That is why we go above and beyond to tailor each journey to suit individual preferences and requirements.Whether you are travelling for special event,business meeting or leisure , our commitment to excellence remains unwavering , ensuring that every moment spent with Oasland Opes is nothing short of extraordinary.</p> -->
+        <p class="chose-para">At Oasland Opes, we understand that transportation is not just about the vehicles we provide and the movement of passengers from one point to another, but also the experiences we create. That is why we go above and beyond to tailor each journey to suit individual preferences and requirements. Whether you are travelling for special event, business meeting or leisure, our commitment to excellence remains unwavering, ensuring that every moment spent with Oasland Opes is nothing short of extraordinary.</p> -->
+
         <div class="chose-con">
-            <div class="icon-img">
-                <img src="/img/driver-removebg-preview.png" alt="driver" width="20%"  height="20%" >
+            <div class="icon-img icon-box">
+                <img src="/img/driver-removebg-preview.png" alt="driver" width="30%"  height="15%" >
                 
                 <h4>Professional Driver</h4>
-                <p>Our drivers are professional, friendly , matured ,courteous and they don't drive recklessly while on the road ,because our client safety is our concerns</p>
+                <p>Our drivers are professional, friendly, matured, courteous and they don't drive recklessly while on the road, because our client safety is our concerns</p>
 
             </div>
             <div  class="icon-box" >
                 <!-- <i class="fa-solid fa-naira-sign"></i> -->
                 <i class="fa-solid fa-wallet"></i>
                 <h4>Affordable Pricing</h4>
-                <p>Our rental prices are  affordable according to your budget. We have no hidden prices for our prospective clients.</p>
+                <p>Our rental prices are  affordable, it is  according to your budget. Whenever you are trying to road trip on a budget, we are available to offer you a diverse range of vehicles for every need at affordable rate.</p>
             </div>
             <div  class="icon-box">
                 <!-- <i class="fa-solid fa-wallet"></i> -->
                 <!-- <i class="fa-thin fa-gear"></i> -->
                 <i class="fa-solid fa-gear"></i>
-                <h4>Well- Maintained vehicle</h4>
-                <p>Our vehicles are all well-maintained,cleaned with frequent maintenance. We priortize the upkeep of our vehicles , providing our customers with a reliable and enjoyable driving experience.</p>
+                <h4> Maintained Vehicle</h4>
+                <p>Our vehicles are all well-maintained, cleaned with frequent maintenance. We priortize the upkeep of our vehicles, providing our customers with a reliable and enjoyable driving experience.</p>
 
             </div>
             </div>
     </section>
+   
+
+   
+
     <div class="slideshow-container">
 
         <!-- Full-width images with number and caption text -->
@@ -187,7 +195,7 @@
             <div class="phone"><h3 style="color: #fff; font-size: 40px;">Oasland <span style="color: #088178; font-size: 30px; font-weight: 800;">Opes</span></h3></div>
 
             <br>
-            <p>Company Address:10,Ashimowu Street,Gbagada, Lagos State.</p>
+            <p>Company Address:10, Ashimowu Street, Gbagada, Lagos State.</p>
             <p> Please Contact us on 08034114504</p>
             <p>info@oaslandopes.com</p>
             <p>bookings@oaslandopes.com</p>

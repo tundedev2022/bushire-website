@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="OASLANDOPES is an ever growing vehicle hiring service in lagos, Nigeria">
     <title>Service page</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="./js/header.js" defer></script>
     <script src="./js/slider.js" defer></script>
+    <script src="./js/dom.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -18,9 +20,12 @@
             <li><a href="/index.html">Home</a></li>
             <li><a  href="/contact.html">Contact</a></li>
             <li><a href="/about.html">About </a></li>
-            <li><a class="active"  href="/service.html"> Services</a></li>
+            <li><a class="active"  href="/service.html"> Hire a vehicle</a></li>
         </ul>
-        <div class="book-btn"><button><a href="/booking.html">BOOK NOW</a></button></div>
+        <div class="book-btn">
+            <button class="js-btn" onclick="myBtn()"><a href="/booking.html">BOOK NOW</a></button>
+            </button></div>
+        
 
 <div id="mobile">
     <button class="open"><i class="fa fa-bars"></i></button>
@@ -31,43 +36,45 @@
 
     <section id="s-header" class="service-header">
         <h2>Our Services</h2>
-        <span>Home / Service</span>
+        <span>Home / Hire a vehicle</span>
     </section>
 
     <section class="hero-service">
         <div class="service-hero-container">
-            <h2>We rendered the following services for organization and individual business trips, event and other social enagements.</h2>
-            <ul class="service-list">
-                <li>Coaster bus hired service</li>
-                <li>Toyota Hiace  bus hired service</li>
-                <li>Toyota Sienna  hired service</li>
-                <li>Toyota Corrola hired service</li>
-            </ul>
+            <h2>Oasland Opes have a diverse range of vehicles to suit the specific need of our customers.
+                  These include  Hiace bus, Coaster bus, Sienna and Sedan.  Explore our diverse selection of vehicle categories.</h2>
+            <!-- <ul class="service-list">
+                <li>Hiace bus</li>
+                <li>Coaster bus</li>
+                <li>Sienna </li>
+                <li>Sedan</li>
+            </ul> -->
+         </h2>
             <div  class="service-container">
                 <div class="s-gallery">
                     <div class="s-des">
                         <h5>Toyota Corrola Bus</h5>
-                        <img src="/img/16_seaters-removebg-preview.png" alt="" width="100%">
+                        <img src="/img/16_seaters-removebg-preview.png" alt="" width="105%">
                             <a href="/booking.html">Hire Now</a>
                     </div>
                     <div class="s-extra">
                         <h5>Toyota Sienna</h5>
-                        <img src="/img/sienna img.jfif" alt="" width="100%">
+                        <img src="/img/sienna img.jfif" alt="" width="105%">
                         <a href="/booking.html">Hire Now</a>
                     </div>
                     <div class="s-extrax">
                         <h5>Toyota Coaster Bus</h5>
-                        <img src="/img/mini-bus-removebg-preview.png" alt="" width="100%">
+                        <img src="/img/mini-bus-removebg-preview.png" alt="" width="105%">
                         <a href="/booking.html">Hire Now</a>
                     </div>
                     <div class="s-extral">
                         <h5>Toyota Corolla</h5>
-                        <img src="/img/corolla.pg-removebg-preview.png" alt="" width="100%">
+                        <img src="/img/corolla.pg-removebg-preview.png" alt="" width="105%">
                         <a href="/booking.html">Hire Now</a>
                     </div>
                   
                 
-              
+              </div>
             </div> 
         </div>
 
@@ -81,7 +88,7 @@
         <div class="hire-container">
             <div class="phone"><h3 style="color: #fff; font-size: 40px;">Oasland <span style="color: #088178; font-size: 30px; font-weight: 800;">Opes</span></h3></div>
             <br>
-            <p>Company Address:10,Ashimowu Street,Gbagada, Lagos State.</p>
+            <p>Company Address:10, Ashimowu Street, Gbagada, Lagos State.</p>
             <p> Please Contact us on 08034114504</p>
             <p>info@oaslandopes.com</p>
             <p>bookings@oaslandopes.com</p>
