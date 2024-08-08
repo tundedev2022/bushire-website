@@ -1516,11 +1516,12 @@ li,a {
   color: #088178;
 }
 .chose-con p {
-  /* text-align:justify; */
-  min-width: 260px;
+  text-align:center;
+  min-width: 280px;
   font-size: 20px;
   font-weight: 400;
   padding: 0 10px;
+  line-height: 30px;
 }
 
 /* slider-section */
@@ -1541,7 +1542,7 @@ li,a {
   left: 20px;
 }
 .next{
-  right: -19px;
+  right: -10px;
 }
 .prev, .next {
   cursor: pointer;
@@ -1580,7 +1581,8 @@ h3 span{
   }
     .contact-header span {
       font-size: 16px;
-      font-weight: 400;
+      font-weight: 300;
+      text-align: center;
   }
   .a-section a {
     font-size: 20px;
@@ -1627,7 +1629,7 @@ h3 span{
   align-items: center;
 }
 .feeback-text {
-  width: 400px;
+  width: 350px;
   color: white;
   padding: -30px 10px;
   font-size: 16px;
@@ -1695,12 +1697,11 @@ line-height: 30px;
 }
   .service-hero-container h2 {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 30px;
-    color:rgb(2, 14, 27);
-    /* padding:20px 0 -40px 0; */
-    width: 24rem;
-    text-align: center;
+    max-width: 60rem;
+    padding: 0 2px 0 0;
+  
 }
   
   .service-list {
@@ -1735,32 +1736,32 @@ line-height: 30px;
   width: 300px;
 }
 .s-des h5 {
-  padding: 20px 25px;
-  font-size: 20px;
+  padding: 20px 24px;
+  font-size: 18px;
   position: absolute;
   left: 1.2rem;
   top: 1.3rem;
 }
 .s-extra h5 {
-  padding: 20px 25px;
-  font-size: 20px;
+  padding: 20px 24px;
+  font-size: 18px;
   position: absolute;
-  left: 8.8rem;
+  left: 10rem;
   top: 27.9rem;
 }
 .s-extrax h5 {
-  padding: 20px 25px;
+  padding: 20px 24px;
   font-weight: bolder;
-  font-size: 20px;
+  font-size: 18px;
   position: absolute;
   left: 1.2rem;
   top: 53.6rem;
 }
 .s-extral h5 {
-  padding: 20px 25px;
-  font-size: 20px;
+  padding: 20px 24px;
+  font-size: 18px;
   position: absolute;
-  left: 8.3rem;
+  left: 9.3rem;
   top: 78.9rem;
 }
 
