@@ -17,7 +17,7 @@
             <li><a href="/index.html">Home</a></li>
             <li><a href="/contact.html">Contact</a></li>
             <li><a href="/about.html">About </a></li>
-            <li><a href="/service.html">Our Services</a></li> 
+            <li><a href="/service.html">Services</a></li> 
         </ul>
         <div class="book-btn"><button><a class="active"  href="/booking.html">BOOK NOW</a></button></div>
 
@@ -31,10 +31,25 @@
         <span>Home / Book Now</span>
     </section>
 
+
+     <script>
+        function validateForm() {
+          let x = document.forms["myForm"]["fname"].value;
+          if (x == "") {
+            alert("Name must be filled out");
+            return false;
+          }
+        }
+        </script>
+        </head>
+        <body>
+        
+       
+
     <section class="booking-section">
         <!-- <span id="about-heading">BOOK WITH US TODAY</span> -->
-        <form class="book-form" action="#">
-            <i class="fa-brands fa-x-twitter "  style="background-color: red;"></i> <input placeholder="Name*"  required ="text">
+        <form class="book-form" action="#" onsubmit="return validateForm()" method="post">
+             <input placeholder="Name*"  required ="text">
             <br>
             <input placeholder="Phone number*" type="number">
             <br>
@@ -44,8 +59,9 @@
             <input placeholder="Pick up Address:" required type="text">
             <!-- <textarea placeholder="Pick up Address:" ></textarea> -->
             <br>
+            <!-- <label for="date"><i class="fa-facebook-f" style="color: red; "></i></label> -->
             <input placeholder="Date" required type="date">
-            <span></span><input placeholder="Time" type="time">
+            <input placeholder="Time" type="time">
             <br>
 
             <input placeholder="Arrival Station:" required type="text">
@@ -53,10 +69,10 @@
             <div class="check-container">
                 <div class="check-one">
                     <span>Oneway  </span>
-                    <input  type="checkbox" required>  
+                    <input  type="checkbox" valid>  
                 </div>
                 <div class="check-two">
-                    <span>Round trip </span> <input  type="checkbox" required> 
+                    <span>Round trip </span> <input  type="checkbox" valid> 
                 </div>
             </div>
             <button type="submit" class="a-btn book">Send</button>
@@ -74,6 +90,7 @@
             <p>Company Address:10,Ashimowu Street,Gbagada, Lagos State.</p>
             <p> Please Contact us on 08034114504</p>
             <p>info@oaslandopes.com</p>
+            <p>bookings@oaslandopes.com</p>
             <!-- <p>oaslandopes@gmail.com</p> -->
         </div>
         <div class="footer-icon">

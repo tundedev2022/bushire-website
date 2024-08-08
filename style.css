@@ -112,7 +112,7 @@ a{
 }
 .navbar li a{
     text-decoration: none;
-    font-size: 22px;
+    font-size: 25px;
     font-weight: 700;
     transition: 0.3s ease;
     color:white;
@@ -158,7 +158,7 @@ a{
     padding:50px 20px 10px 20px;
     margin:10px 60px;
     text-align: center;
-    border-bottom: 2px solid #088178
+    /* border-bottom: 2px solid #088178; */
 }
 .chose-section h3{
   color: #088178;
@@ -207,20 +207,24 @@ a{
   align-items: center;
   max-width:800px;
   position: relative;
-  /* margin-left: 400px; */
   margin:0 90px 0 290px;
 }
 
 /* Hide the images by default */
 .mySlides {
-  display: none;
+  display: block;
+  width: 500px;
+  height: 500px;
+}
+.mySlides img{
+  min-width:130%;
 }
 
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 40%;
   width: auto;
   margin-top: -22px;
   margin-left: -990px;
@@ -233,7 +237,7 @@ a{
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-/* Position the "previous button" to the right */
+/* Position the "previous button" to the left */
 /* .previous {
   position: absolute;
   padding-left: 100px;
@@ -242,7 +246,7 @@ a{
 
 /* Position the "next button" to the right */
 .next {
-  right:-90px;
+  right:-160px;
   border-radius: 3px 0 0 3px;
 }
 
@@ -603,14 +607,14 @@ a{
     /* height: 60vh; */
   }
   #about{
-    padding: 10px;
+    padding: 10px auto;
 
   }
   .about-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:0 20px;
+    padding:50px 20px;
   }
   .about-header{
     display: flex;
@@ -629,21 +633,24 @@ a{
   }
   #about-heading{
     font-size: 50px;
-    font-weight: 900;
+    font-weight: 500;
     padding: 0 20px;
     margin: 0 20px;
-    color: gray;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(5, 82, 75);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-#about-heading::before{
+#about-heading::after{
   content: "";
   width: 10%;
-  height:4px;
-  background: #088178;
+  height:7px;
+  background: #2e2c2c;
   position: absolute;
-  bottom:60px;
+  top:39rem;
   left: 110px;
-
+}
+#about-heading::first-line{
+  font-size: 40rem;
+  color:red ;
 }
   
   .about-text p {
@@ -652,19 +659,23 @@ a{
     width: 90%;
     font-size: 20px;
     line-height: 40px;
-  
   }
-
-
   .about-gallery{
     margin-top: 70px;
-    padding:50px 30px;
+    padding:10px 20px;
     width: 2500px;
+    background-color: rgb(87, 75, 75);
   }
   
   .about-gallery img{
     width: 100%;
+    border:none;
+    border-radius: 10px;
+    box-shadow: 2px 3px 4px black;
+    /* clip-path: polygon(0 0, 100% 0, 100% 5vh, 0 100%); */
+    -webkit-clip-path:polygon(0 0, 150% 0, 140% 50vh, 0 100%);
   }
+
   /* service page */
   #s-header.service-header{
     background-image: linear-gradient(to right bottom,
@@ -829,7 +840,7 @@ a{
   .booking-section{
     display: flex;
     justify-content: center;
-    padding:150px 100px;
+    padding:30px 100px 120px 100px;
     /* background-image: linear-gradient(to right bottom,
     #1034d831, #06172221), url(/img/bus\ img.jpg); */
     background-size: cover;
@@ -1059,51 +1070,6 @@ a{
   width: 60%;
 }
  
-
-/* .service-container {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 30px 0;
-  justify-content: center;
-  align-items: center;
-}
-.service {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: 100px;
-}
-.service-container h1 {
-  font-size: 60px;
-  font-weight: 900;
-}
-
-.service-para {
-  padding: 30px 100px;
-  font-size: 30px;
-  font-weight: 200;
-  color: gray;
-  text-align: center;
-  line-height: 40px;
-  min-width: 900px;
-} */
-/* .service-box1 p{
-  font-size: 30px;
-  font-weight: 900;
-  text-align: center;
-
-}
-.service-box2 p{
-  font-size: 30px;
-  font-weight: 900;
-  text-align: center;
-  margin-left: 60px;
-
-}
-.service-box1 > div img, .service-box2 > div > img {
-  width: 120%;
-  height: 20%;
-} */
-
 .chose-section {
   display: flex;
   justify-content: center;
@@ -1137,6 +1103,7 @@ a{
 .chose-con h4{
   font-size: 39px;
   font-weight: 900;
+  color: #088178;
 }
 
 .chose-con p{
@@ -1167,18 +1134,24 @@ a{
 /* slider effect */
 .slideshow-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 900px;
+  max-width: 500px;
   position: relative;
-  margin: 0 0 0 40px;
+  margin-left: 90px;
+}
+.mySlides{
+  width: 300px;
+  height: auto;
+}
+.mySlides img{
+  width: 100%;
 }
 .prev {
-  left:2%;
+  left:50px;
   border-radius: 3px 0 0 3px;
 }
 .next {
-  right:10%;
+  position: absolute;
+  right:-39px;
   border-radius: 3px 0 0 3px;
 }
 .prev, .next {
@@ -1193,7 +1166,6 @@ a{
   font-weight:900;
   font-size: 16px;
 }
-
 
 
 /* contact page */
@@ -1251,16 +1223,19 @@ a{
   padding: 0 50px; 
   position: relative;
 }
+.about-header span{
+  font-size:16px;
+}
 #about-heading {
   padding: 0 20px;
 }
 
-#about-heading::before {
+#about-heading::after {
   content: "";
-  width: 14%;
+  width: 10%;
   height: 5px;
   position: absolute;
-  top: 55px;
+  top: 60px;
   left: 150px;
 }
 .about-text p {
@@ -1479,6 +1454,7 @@ li,a {
   display: flex;
   margin: -20px 20px;
   height: auto;
+  border-bottom: rgb(22, 1, 1);
 }
 .chose-section  h3 {
   font-size:31px;
@@ -1519,11 +1495,22 @@ li,a {
 /* slider-section */
 .slideshow-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 300px;
+  max-width: 250px;
   position: relative;
-  margin: 0 10px 0 40px;
+  margin-left: 50px;
+}
+.mySlides{
+  width: 200px;
+  height: auto;
+}
+.mySlides img{
+  width: 50%;
+}
+.prev{
+  left: 20px;
+}
+.next{
+  right: -19px;
 }
 .prev, .next {
   cursor: pointer;
@@ -1542,19 +1529,18 @@ li,a {
 }
 .phone   {
   color: white;
-} span
-h3{
+}
+ 
+h3 span{
   font-size: 20px;
 }
 /* contact page */
-    #contact {
-      
-      padding: 50px 20px;
-    }
+  
     #contact {
       background-image: linear-gradient(to right bottom,
        rgba(3, 14, 14, 0.829), rgba(35, 37, 34, 0.562)), url(/img/corolla.pg-removebg-preview.png);
        background-position: center;
+       padding: 50px 20px;
     
   }
     .contact-header h2 {
@@ -1576,11 +1562,9 @@ h3{
   font-size: 19px;
   border-radius: 10px;
 }
- 
-    .a-form {
+ a-form {
       padding: 20px 30px;
     }
-  
     .a-section p {
       font-size: 18px;
       font-weight:900;
@@ -1588,7 +1572,7 @@ h3{
       color: whitesmoke;
       /* line-height: 30px; */
   }
- 
+
   .a-section {
     font-size: 24px;
     font-weight: 900;
@@ -1622,37 +1606,43 @@ h3{
   width: 80%;
   height: 200px;
 }
-      /*about page  */
-      .about-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        padding: 0 20px;
-        position: relative;
-    }
-      #about-heading {
-        text-align: center;
-        font-size: 40px;
-        /* padding-left: 1px; */
-    }
-    #about-heading::before {
-      content: "";
-      width: 22%;
-      height: 5px;
-      position: absolute;
-      top: 45px;
-      left: 120px;
-  }
-    .about-text p {
-      padding:10px 20px 10px 0; 
-      margin: 20px 10px;
-      width: 350px;
-      margin-right: 99px;
-      font-size: 20px;
-      font-weight: 300;
-      line-height: 30px;
-  }
+/*about page  */
+
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+  position: relative;
+}
+/* .about-header span {
+  font-size: 14px;
+} */
+#about-heading {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+  margin-left: -15px;
+}
+#about-heading::after {
+content: "";
+width: 22%;
+height: 3px;
+position: absolute;
+top: 49px;
+left: 50px;
+}
+.about-text p {
+padding:10px 20px 10px 0; 
+margin: 20px 10px;
+width: 350px;
+margin-right: 99px;
+font-size: 20px;
+font-weight: 300;
+line-height: 30px;
+}
   .about-gallery {
     margin: -50px 0 0 -120px;
     padding: 60px 20px;
